@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suhas Pet Adoption Center</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+    
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#available-pets">Available Pets</a></li>
+        <li><a href="#calculator">Cost Calculator</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section bg-light">
+    <h1><i>Welcome to the Pet Adoption Center</i></h1>
+    <p>Find your new best friend and give a pet a loving home today!</p><br><br>
+    <p>Welcome to Suhas' Pet Adoption Center, a haven for pets in search of a loving home. Our mission is to rescue, rehabilitate, and rehome animals in need, providing them with a second chance at a happy, fulfilling life. We believe every pet deserves a safe and caring environment, and our dedicated team works tirelessly to ensure that each animal receives the love, attention, and medical care they need. Whether you're looking for a playful puppy, a cuddly kitten, or a mature companion, we are here to help you find your perfect match. Join us in making a difference—adopt, volunteer, or donate today!</p>
+    <div class="pet-gallery">
+      <div class="pet-card scroll-animation">
+        <img src="dog.jpg" alt="Buddy the Dog">
+        <p>Buddy the Dog</p>
+      </div>
+      <div class="pet-card scroll-animation">
+        <img src="cat.jpg" alt="Whiskers the Cat">
+        <p>Whiskers the Cat</p>
+      </div>
+      <div class="pet-card scroll-animation">
+        <img src="bird.jpg" alt="Sunny the Bird">
+        <p>Sunny the Bird</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Pets Section -->
+  <section id="available-pets" class="section bg-dark">
+    <h2>Available Pets for Adoption</h2>
+    <div class="pet-gallery">
+      <div class="pet-card scroll-animation">
+        <img src="cat2.jpg" alt="Luna the Cat">
+        <p>Luna the Cat</p>
+      </div>
+      <div class="pet-card scroll-animation">
+        <img src="dog2.jpg" alt="Max the Dog">
+        <p>Max the Dog</p>
+      </div>
+      <div class="pet-card scroll-animation">
+        <img src="parrot.jpg" alt="Polly the Parrot">
+        <p>Polly the Parrot</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Care Cost Calculator Section -->
+  <section id="calculator" class="section bg-light">
+    <div class="boxed-section">
+      <h2>Care Cost Calculator</h2>
+      <form id="calculator-form">
+        <label for="pet-type">Pet Type:</label>
+        <select id="pet-type">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="bird">Bird</option>
+        </select>
+
+        <label for="care-level">Care Level:</label>
+        <select id="care-level">
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="premium">Premium</option>
+        </select>
+        <br>
+        <button type="button" onclick="calculateCost()">Calculate Cost</button>
+      </form>
+      <p id="result"></p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="section bg-dark">
+    <div class="boxed-section">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
